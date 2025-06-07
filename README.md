@@ -1,1 +1,1 @@
-# Facial-recognition
+# Facial-recognition project to learn about deep learning 
