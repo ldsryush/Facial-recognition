@@ -12,6 +12,6 @@ for face in faces:
     x, y, w, h = face.left(), face.top(), face.width(), face.height()
     cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)  # Green box
 
-cv2.imshow("Face Detection", image) #this shows the image
+cv2.imwrite("output.jpg", image)  # Saves the processed image
 cv2.waitKey(0) #wait for the key to be pressed by user
 cv2.destroyAllWindows()
