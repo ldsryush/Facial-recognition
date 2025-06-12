@@ -14,10 +14,10 @@ for filename in os.listdir(known_faces_dir):
     encodings = face_recognition.face_encodings(img)
     if encodings:
         known_encodings.append(encodings[0])
-        known_names.append(os.path.splittext(filename)[0])
+        known_names.append(os.path.splitext(filename)[0])
 #video stream starts
 
-video_capture = cv2.ViedoCapture(0)
+video_capture = cv2.VideoCapture(0)
 
 while True:
     ret, frame = video_capture.read()
