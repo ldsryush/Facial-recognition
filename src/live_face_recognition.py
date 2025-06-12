@@ -52,4 +52,11 @@ while True:
         cv2.putText(frame, name, (left, top-10), cv2.FONT_HERSHEY_DUPLEX, 0.75, (0, 255, 0), 1)
 
     cv2.imshow("Live Face Recognition", frame)
-    
+
+    #quitting program by pressing q
+    if cv2.waitKey(1) & 0xFF == ord("q"):
+        break
+
+video_capture.release()
+cv2.destroyAllWindows()
+
